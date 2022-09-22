@@ -1,0 +1,110 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.top{
+
+    width:100%;
+    height:12%;
+    background-color: black;
+}
+.top_menu{
+    display: flex;
+    position: absolute;
+    top:15px;
+    width:100%;
+    
+    justify-content:space-around;
+}
+.top_menu_logo{
+    width:80px;
+    left:15px;
+    background-image: url("images/main_logo.png");
+    background-size: cover;
+}
+.top_menu_bar{
+    width: 60%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.bar_text_1{
+    color:white;
+    text-decoration: none;
+}
+.bar_text_2{
+    color:white;
+    text-decoration: none;
+}
+.bar_text_3{
+    color:white;
+    text-decoration: none;
+}
+
+.top_login{
+    width:10%;
+    height: 80px;
+    background-color: aqua;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 88%;
+}
+
+.swiper-slide {
+    
+    background-image: url("images/cat1.jpg");
+    background-size: cover;
+    text-align: center;
+    font-size: 18px;
+    /*background: #fff;*/
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;     
+    -webkit-align-items: center;            /* 세로 중간 정렬 */
+    -webkit-justify-content: center;        /* 가로 중간 정렬 */
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*change progressbar place*/
+.swiper > .swiper-pagination-progressbar{
+    max-width: 800px;
+    top: auto;
+    bottom: 25%;
+    left: 50%;
+    margin-left: -400px;
+    background: rgba(255,255,255,0.8);
+}
+
+/*change progressbar color*/
+.swiper > .swiper-pagination-progressbar > .swiper-pagination-progressbar-fill{
+    background-color: black;
+}
